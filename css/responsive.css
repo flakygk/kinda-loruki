@@ -1,0 +1,83 @@
+/* For languages card wrap */
+@media screen and (max-width: 1099px) {
+  .languages .flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 950px) {
+  .showcase {
+    margin-bottom: 100px;
+  }
+
+  .showcase .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-form {
+    top: -100px;
+  }
+}
+
+/* tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .showcase-text {
+    text-align: center;
+    /* margin-top: 40px; */
+    margin: auto;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    top: 60px;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .footer div {
+    text-align: center;
+  }
+}
+
+/* mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .1);
+  }
+
+  .showcase-form {
+    width: 360px;
+  }
+}
